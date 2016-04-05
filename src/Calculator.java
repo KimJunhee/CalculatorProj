@@ -9,6 +9,9 @@ public class Calculator {
 	public int sub(int x,int y){
 		return x-y;
 	}
+	public int mul(int x,int y){
+		return x*y;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -16,6 +19,7 @@ public class Calculator {
 		
 		System.out.println(cal.add(1, 2));
 		System.out.println(cal.sub(1, 2));
+		System.out.println(cal.mul(1, 2));
 		
 		
 		
