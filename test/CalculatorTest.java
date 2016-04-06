@@ -6,24 +6,33 @@ import org.junit.Test;
 
 public class CalculatorTest {
 
+	Calculator cal;
 	@Before
 	public void setUp() throws Exception {
+		 cal = new Calculator();
+		 //System.out.println("a");
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		cal=null;
 	}
 
 	@Test
 	public void test() {
 
-		Calculator cal = new Calculator();
+		for(long i=0;i<100000;i++)
 		assertEquals(2,cal.add(1, 1));
 	}
 	@Test
 	public void testadd1() {
-
-		Calculator cal = new Calculator();
-		assertEquals(2,cal.add(1, 1));
+		assertEquals(4,cal.add(3, 1));
 	}
+	@Test
+	public void testsub() {
+		for(long i=0;i<100000;i++)
+		assertEquals(2,cal.sub(3, 1));
+	}
+	
+	
 }
